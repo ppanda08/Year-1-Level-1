@@ -1,0 +1,42 @@
+
+ // Promotion with Assignment Operators
+ // promotion.c
+
+ int main(void)
+ {
+         int loonies;
+         double cash;
+
+         printf("Loonies ? ");
+         scanf("%d", &loonies);
+         cash = loonies; // promotion
+         printf("Cash is $%.2lf\n", cash); 
+
+         return 0;
+ }
+ 
+ /*OUTPUTS
+ Loonies ? 23
+ Cash is $23.00 
+*/
+
+ // Truncation with Assignment Operators
+ // truncation.c
+
+ int main(void)
+ {
+         double cash;
+         int loonies;
+
+         printf("Cash ? ");
+         scanf("%lf", &cash);
+         loonies = cash; // truncation
+         printf("%d loonies.\n", loonies); 
+
+         return 0;
+ }
+ 
+ /*OUTPUTS
+ How much cash ? 23.45 
+ 23 loonies.
+ */
