@@ -1,0 +1,14 @@
+int main(void)
+{
+	int minutes;
+	char s;
+
+	printf("How many minutes left ? ");
+	scanf("%d", &minutes);
+	s = minutes > 1 ? 's' : '';
+	printf("%d minute%c left\n", minutes, s);
+	return 0;
+}
+
+/* If the condition is true (minutes > 1) then it'll print 's' after minute
+otherwise it will print a space to repsent a single minute*/
